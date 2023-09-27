@@ -12,7 +12,7 @@ const nextConfig = {
     return [
       {
         source: "/api/:path*",
-        destination: "http://localhost:8080/api/:path*", // Sesuaikan dengan URL Spring Boot Anda
+        destination: "http://192.168.141.126:8080/api/:path*", // Sesuaikan dengan URL Spring Boot Anda
       },
     ];
   },
