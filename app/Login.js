@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import LoginService from "@/service/LoginService";
 import IsLogin from "@/service/IsLogin";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Login() {
   const router = useRouter();
@@ -86,8 +87,11 @@ export default function Login() {
                 </div>
               </span>
               <span className="label-text-alt font-semibold text-base-100 mt-2">
-                Forgot Password?
-              </span>
+             <Link href="/forgot-password">
+                           Forgot Password
+                 </Link>
+              </span>   
+            
             </label>
           </div>
         </div>
